@@ -1,4 +1,4 @@
-#Introduciton
+#Introduciton  
 This project uses a [Gazebo](http://gazebosim.org/#features) simulation platform to program a [Kuka KR210](https://www.kuka.com/en-us/products/robotics-systems/industrial-robots/kr-210-2-f-exclusive) 6 degree of freedom serial manipulator to pick up a cylinder from a shelf and drop it into a bin next to the manipulator.
 
 The cylinder is located radnomly on the shlef, Thus the robot needs to figure out his motor and joint angles and speeds to reach to the can from Global reference frames to his local frames. This could be acheived by calculaing the inverse Kinematics of the Robot.
@@ -23,12 +23,10 @@ The cylinder is located radnomly on the shlef, Thus the robot needs to figure ou
 
 After evaluating the the kr210.urdf.xacro, and comparing it with our DH parameter reference frames, we converted the Robot dimension information to the DH table as the following.
 
-![Markdown preferences pane](./kuka210/DH parameter reference frame.jpeg)
-![alt text][image4]
+![dh parameter reference frame](https://user-images.githubusercontent.com/6395647/30779703-9bb8ff02-a0c5-11e7-8cc0-52bacc8e6bea.jpeg)![alt text][image4]
 **Img:1 DH Parameter Reference Frames**
 
-![Markdown preferences pane](/Users/besh/Documents/UdacityRobot/project2/URDF file reference frame.png)
-![alt text][image5]
+![urdf file reference frame](https://user-images.githubusercontent.com/6395647/30779704-9bbaa190-a0c5-11e7-9108-4388e473f6ad.png)![alt text][image5]
 **Img:2 URDF file reference frames**  
   
     
