@@ -178,14 +178,18 @@ T_EE=
 ~~~
 
 ##Inverse Kinametics
-Inverse Kinematics is computing the joint angles when knowing the end effector's position and orientation.
+Inverse Kinematics is computing the joint angles when knowing the end effector's position and orientation. Therefore, when knowing the target location, IK computes the amount of movement and direction that needs to be executes to reach that location, making it an important chapter in Robotics.
 Because the [Kuka KR210](https://www.kuka.com/en-us/products/robotics-systems/industrial-robots/kr-210-2-f-exclusive) joints (4  5 and 6) satisfies that its:  
 **Three neighboring joint axes intersect at a single point**
 
-Therefore, the inverse Kinematic problem it is solvable in closed-form with wrist center at joint _5_.  
- which is able to rotate the end effector to the exact orientation required for the task at hand. The first three joints move the wrist center to a position where it has enough mobility to orient itself to the angle required.
-![Markdown preferences pane](/Users/besh/Desktop/UdacityProject 2/kuka210/IK.svg)
+The inverse Kinematic problem it is solvable in closed-form with wrist center at joint _5_.  
+which is able to rotate the end effector to the exact orientation required for the task at hand. The first three joints move the wrist center to a position where it has enough mobility to orient itself to the angle required.  
+  
+  
+![ik](https://user-images.githubusercontent.com/6395647/30779765-8266aa7a-a0c7-11e7-871c-4d21910fac6f.png)
 
+
+I hope you got something from all the graphics above: :smirk:
 ## Test Code
 
 The inverse kinematic code was tested with the [IK_debug.py](IK_debug.py) file. it tests the code against known solutions.
