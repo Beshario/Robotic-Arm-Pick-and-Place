@@ -13,7 +13,7 @@ The cylinder is located radnomly on the shlef, Thus the robot needs to figure ou
 
 After evaluating the the kr210.urdf.xacro, and comparing it with our DH parameter reference frames, we converted the Robot dimension information to the DH table as the following.
 
-![Markdown preferences pane](/Users/besh/Documents/UdacityRobot/project2/DH parameter reference frame.jpeg)
+![Markdown preferences pane](./kuka210/DH parameter reference frame.jpeg)
 **Img:1 DH Parameter Reference Frames**
 
 ![Markdown preferences pane](/Users/besh/Documents/UdacityRobot/project2/URDF file reference frame.png)
