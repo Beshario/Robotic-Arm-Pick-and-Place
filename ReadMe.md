@@ -1,4 +1,7 @@
-#Introduciton  
+# Introduciton 
+
+![alt text][image3]
+
 This project uses a [Gazebo](http://gazebosim.org/#features) simulation platform to program a [Kuka KR210](https://www.kuka.com/en-us/products/robotics-systems/industrial-robots/kr-210-2-f-exclusive) 6 degree of freedom serial manipulator to pick up a cylinder from a shelf and drop it into a bin next to the manipulator.
 
 The cylinder is located radnomly on the shlef, Thus the robot needs to figure out his motor and joint angles and speeds to reach to the can from Global reference frames to his local frames. This could be acheived by calculaing the inverse Kinematics of the Robot.
@@ -17,7 +20,7 @@ The cylinder is located radnomly on the shlef, Thus the robot needs to figure ou
 
 
 
-##Kinematic Analysis
+## Kinematic Analysis
 
 *Kinematics*  is the a branch of mechanics that describes the motion of a system without considering the forces involved. Lots if the kinematics 
 
@@ -42,7 +45,7 @@ Links | alpha(i-1)(rad) | a(i-1)(m) | d(i)(m) | theta(i)(rad)
 6->EE | 0 | 0 | 0.193 + 0.11 = 0.303 | 0
 
 
-#### 2. Using the DH parameter table you derived earlier, create individual transformation matrices about each joint. In addition, also generate a generalized homogeneous transform between base_link and gripper_link using only end-effector(gripper) pose.
+#### 2. Using the DH parameter table you derived earlier, individual transformation matrices were created about each joint. In addition, also a generalized homogeneous transform between base_link and gripper_link was generated using only end-effector(gripper) pose
 
 Python was used to create the individual transformation matrices about each joint, a snippet of the code is shown:
 
