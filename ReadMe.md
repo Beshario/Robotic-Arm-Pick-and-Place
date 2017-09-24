@@ -217,7 +217,6 @@ You should see both Gazebo and Rviz launching. Gazebo should have a living room 
 To run the inverse kinematic code, run the following code in a new terminal:
 
 ```bash
-cd ~/catkin_ws/src/RoboND-Kinematics-Project/kuka_arm/scripts
 rosrun kuka_arm IK_server.py
 ```
 
